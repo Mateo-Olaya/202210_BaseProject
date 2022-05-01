@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div class ="col-12">
+    <img src="/assets/aroma.png" class="aroma" alt="Banner">
+  <hr/>
+  <div class ="col-12">
+    <img src="/assets/cafe.png" class="img-fluid" alt="Banner">
+  <hr/>
+  </div>
+  <div class="col-8">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="h4">#</th>
+          <th class="h4">Nombre</th>
+          <th class="h4">Tipo</th>
+          <th class="h4">Region</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of cafes">
+          <td>
+            <dd>{{c.id}}</dd>
+          </td>
+          <td>
+            <dd>{{c.nombre}}</dd>
+          </td>
+          <td>
+            <dd>{{c.tipo}}</dd>
+          </td>
+          <td>
+            <dd>{{c.region}}</dd>
+          </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<footer class="text-center text-lg-start text-muted">
+  <div class="text-center p-4">
+    Contact us: +57 3102105253 - info@elaromamagico.com - @elaromamagico
+  </div>
+</footer>
+
